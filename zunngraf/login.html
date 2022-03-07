@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body background="https://drive.google.com/uc?export=view&id=1dOtT72JXGVwy8wRGFoBknnWiF-gc4WOq">
+    <div class="container">
+		<h2 class="header-login"><center><b>LOGIN</b></center></h2>
+		<form method="post" action="loginop.php" class="login">
+			<table>
+				<tr>
+					<td>Username</td>
+					<td><input type="text" name="username" required></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" name="password" id="pass" required></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;<input type="checkbox" onclick="show()">Show Password</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;
+						<input type="submit" name="login" value="LOGIN" />
+						<input type="reset" name="reser" value="RESET" />
+					</td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2">
+						<button class="logreg"><a href="index.html">Back to Home</a></button>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<script>
+			function show() {
+				var x = document.getElementById("pass");
+				if (x.type === "password") {
+					x.type = "text";
+				} else {
+					x.type = "password";
+				}
+			}
+		</script>
+	</div>
+</body>
+</html>
